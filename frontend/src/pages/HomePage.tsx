@@ -17,15 +17,15 @@ export function HomePage() {
         <div className="hero-scrim" />
         <AppHeader overlay />
         <div className="hero-content">
-          <p className="eyebrow">Property intelligence</p>
+          <p className="eyebrow">House price estimates</p>
           <h1>
             Find the value
             <br />
             behind <em>every address.</em>
           </h1>
           <p className="hero-description">
-            A considered listing estimate for India’s property market, shaped by a trained
-            model and the details that make a home distinct.
+            Get a listing-price estimate for an Indian home using its location, area, and
+            everyday property details.
           </p>
           <div className="hero-actions">
             <a className="primary-button" href="#prediction-form">
@@ -45,8 +45,8 @@ export function HomePage() {
           <span>You choose location, area, and living details.</span>
         </div>
         <div className="trust-item">
-          <strong>Instant perspective</strong>
-          <span>An estimate in seconds, not a week of waiting.</span>
+          <strong>Quick estimate</strong>
+          <span>Get a result in seconds.</span>
         </div>
       </section>
 
@@ -54,7 +54,7 @@ export function HomePage() {
         <div className="section-heading">
           <p className="eyebrow">Your property profile</p>
           <h2>Let’s get to know the space.</h2>
-          <p>Tell us a little about the home. We’ll take care of the complexity.</p>
+          <p>Enter the home details and we’ll return an estimate in seconds.</p>
         </div>
         <div className="panel">
           <PredictionForm />

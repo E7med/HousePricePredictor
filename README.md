@@ -171,6 +171,18 @@ location_grouped, Furnishing, Transaction, Ownership, facing
 
 The backend copy of the model is `backend/models/house_price.pkl`.
 
+## Deployment
+
+The production frontend is deployed on Vercel:
+
+- Frontend: [https://homeprice-predictor.vercel.app](https://homeprice-predictor.vercel.app)
+
+The FastAPI backend is deployed on FastAPI Cloud:
+
+- Backend: [https://housepricepredictor.fastapicloud.dev](https://housepricepredictor.fastapicloud.dev)
+
+The Vercel project builds the `frontend` directory with `npm run build` and publishes `dist`. Its `vercel.json` sends `/api/*` requests to the FastAPI backend and sends other routes to `index.html` for React Router. In production, the frontend calls relative `/api/...` paths, so users only need the Vercel URL.
+
 
 ## Limitations
 

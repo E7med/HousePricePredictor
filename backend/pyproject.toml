@@ -16,3 +16,6 @@ dependencies = [
 
 [tool.fastapi]
 entrypoint = "app.main:app"
+
+[tool.setuptools.packages.find]
+include = ["app*"]

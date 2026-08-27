@@ -171,16 +171,6 @@ location_grouped, Furnishing, Transaction, Ownership, facing
 
 The backend copy of the model is `backend/models/house_price.pkl`.
 
-## Deployment
-
-The intended Render setup is:
-
-- Deploy `backend/` as a Web Service.
-- Deploy `frontend/` as a Static Site.
-- Set the frontend `VITE_API_BASE_URL` to the deployed backend address.
-- Add an SPA rewrite so React Router routes resolve to `index.html`.
-
-No deployment URLs are stored in this README.
 
 ## Limitations
 

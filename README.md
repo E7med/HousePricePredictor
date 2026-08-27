@@ -132,19 +132,3 @@ copy models\house_price.pkl backend\models\house_price.pkl
 ```
 
 The backend pickle is a copy of the notebook export; it is gitignored to avoid storing 180 MB of identical binaries.
-
-## Screenshots
-
-![CasaLens home](docs/screenshots/home.png)
-
-![CasaLens result](docs/screenshots/result.png)
-
-Mobile captures: `docs/screenshots/home-mobile.png`, `docs/screenshots/result-mobile.png`.
-
-## Limitations and notes
-
-- The estimate is a statistical model output, not a valuation, appraisal, or guarantee of a sale price.
-- The model was trained on historical Indian listing data; coverage and accuracy can vary by location and property profile.
-- The raw Kaggle CSV is intentionally excluded from version control and must be downloaded separately for notebook reruns.
-- The exported pickle requires the pinned scikit-learn version (`1.9.0`) and Git LFS for reliable cloning.
-- The backend keeps native numerical thread pools capped and should run with a single Uvicorn worker on memory-constrained machines.

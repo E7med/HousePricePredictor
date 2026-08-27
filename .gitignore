@@ -26,3 +26,7 @@ backend/models/*.pkl
 .idea/
 .DS_Store
 Thumbs.db
+
+PLAN.md
+House_Price_Prediction_Project_Guide.pdf
+docs/
